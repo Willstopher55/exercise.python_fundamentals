@@ -1,7 +1,8 @@
 # Created by Leon Hunter at 3:57 PM 10/23/2020
 class StringManipulator(object):
     def get_hello_world(self):
-        return None  # TODO - Implement solution
+        greeting = "Hello World"
+        return greeting  # TODO - Implement solution
 
     def concatenate(self, value_to_be_added_to, value_to_add):
         value_to_be_added_to = str(value_to_be_added_to) + str(value_to_add)
@@ -26,26 +27,28 @@ class StringManipulator(object):
         return None  # TODO - Implement solution
 
     def get_first_word(self, string_to_fetch_from):
-        s = ''
-        for x in string_to_fetch_from:
-            if x != ' ':
-                s += x
-            else:
-                break
-        return s
+        # s = ''
+        # for x in string_to_fetch_from:
+        #     if x != ' ':
+        #         s += x
+        #     else:
+        #         break
+        s = string_to_fetch_from.split(' ')
+        return s[0]
 
     def get_second_word(self, string_to_fetch_from):
-        s = ''
-        count = 0
-        for x in string_to_fetch_from:
-            if x == ' ':
-                count += 1
-                if count == 2:
-                    break
-                s = ''
-            else:
-                s += x
-        return s
+        # s = ''
+        # count = 0
+        # for x in string_to_fetch_from:
+        #     if x == ' ':
+        #         count += 1
+        #         if count == 2:
+        #             break
+        #         s = ''
+        #     else:
+        #         s += x
+        s = string_to_fetch_from.split(' ')
+        return s[1]
 
     def reverse(self, string_to_be_reversed):
         return string_to_be_reversed.string[::-1]  # TODO - Implement solution

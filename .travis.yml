@@ -1,3 +1,7 @@
 language: python
 script:
+<<<<<<< HEAD
     - python -m unittest discover -s ./src/test/ -p '*_test.py'
+=======
+    - python -m unittest discover -s ./src/test/ -p '*_test.py'
+>>>>>>> 80950efb4d537f6494bb0b60ff54e5046eacf3cd
